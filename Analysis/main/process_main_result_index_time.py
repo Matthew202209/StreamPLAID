@@ -511,8 +511,8 @@ if __name__ == '__main__':
     data_root = r"./results"
     methods = ['PLAID', "IGP", "MUVERA", "Dessert", "XTR", "StreamPLAID"]
     # methods = ["StreamPLAID"]
-    datasets = ["scifact", "arguana", "fiqa", "touche2020", "lotte-pooled"]
-    # datasets = ["beir-ood", "lotte-ood"]
+    # datasets = ["scifact", "arguana", "fiqa", "touche2020", "lotte-pooled"]
+    datasets = ["beir-ood", "lotte-ood"]
     # distribution_type = "iid"
     distribution_type = "iid"
     save_filename = "iid_arg_index_time.csv"

@@ -1,0 +1,13 @@
+method,dataset,avg_update_time,std_dev
+Dessert,beir-ood,220.49,153.85
+Dessert,lotte-ood,1578.86,769.62
+IGP,beir-ood,90.43,16.81
+IGP,lotte-ood,1234.81,18.24
+MUVERA,beir-ood,160.21,39.65
+MUVERA,lotte-ood,2919.14,102.13
+PLAID,beir-ood,55.87,23.68
+PLAID,lotte-ood,985.99,81.02
+StreamPLAID,beir-ood,8.56,0.53
+StreamPLAID,lotte-ood,205.47,20.50
+XTR,beir-ood,56.70,8.35
+XTR,lotte-ood,363.53,6.62

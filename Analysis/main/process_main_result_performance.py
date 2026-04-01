@@ -330,12 +330,12 @@ if __name__ == '__main__':
     data_root = r"./results"
     methods = ['PLAID', "IGP", "MUVERA", "Dessert", "XTR", "StreamPLAID"]
     # methods = ["StreamPLAID"]
-    # datasets = ["scifact", "arguana", "fiqa", "touche2020", "lotte-pooled"]
-    datasets = ["beir-ood", "lotte-ood"]
-    distribution_type = "ood"
+    datasets = ["scifact", "arguana", "fiqa", "touche2020", "lotte-pooled"]
+    # datasets = ["beir-ood", "lotte-ood"]
+    distribution_type = "iid"
     # distribution_type = "ood"
-    save_filename = "ood_arg.csv"
-    calculate_wide_format_stats(data_root, methods, datasets, distribution_type, save_filename, max_step=4)
+    save_filename = "iid_arg_task0.csv"
+    # calculate_wide_format_stats(data_root, methods, datasets, distribution_type, save_filename, max_step=5)
     # calculate_task0_retention_stats(data_root, methods, datasets, distribution_type, save_filename, max_step=5)
-    merge_arg(data_root, "ood")
-    # merge_arg_task0(data_root, "iid")
+    merge_arg(data_root, "iid")
+    merge_arg_task0(data_root, "iid")
