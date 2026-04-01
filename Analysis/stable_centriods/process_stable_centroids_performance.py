@@ -226,7 +226,7 @@ if __name__ == '__main__':
     methods = ['IGP(Full)', "IGP(wo_update_centriods)", "PLAID(Full)", "PLAID(wo_update_centriods)", "StreamPLAID"]
     # methods = ["StreamPLAID"]
     # datasets = ["scifact", "arguana", "fiqa", "touche2020", "trec-covid", "lotte-pooled"]
-    datasets = ["beir-ood"]
+    datasets = ["beir-ood", "lotte-ood"]
     # distribution_type = "iid"
     save_filename = "stable_centroids_arg_performance.csv"
     calculate_wide_format_stats(data_root, methods, datasets, save_filename,max_step=4)
