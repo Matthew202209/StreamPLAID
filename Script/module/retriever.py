@@ -10,11 +10,11 @@ import pandas as pd
 import scann
 from tqdm import tqdm
 import torch
-from loader.dataloader import CorpusLoader, QueryLoader, StreamingDataLoader
-from models.model_factory import ModelsFactory
-from module.dynamic_process import dynamic_process_factory
-from utils.util_effectiveness import save_effectiveness_metrics
-from utils.util_timer import timer
+from Script.loader.dataloader import CorpusLoader, QueryLoader, StreamingDataLoader
+from Script.models.model_factory import ModelsFactory
+from Script.module.dynamic_process import dynamic_process_factory
+from Script.utils.util_effectiveness import save_effectiveness_metrics
+from Script.utils.util_timer import timer
 import ir_measures
 from ir_measures import nDCG, RR, Success
 

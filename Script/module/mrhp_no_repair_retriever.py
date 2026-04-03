@@ -12,20 +12,20 @@ from tqdm import tqdm
 import ir_measures
 from ir_measures import nDCG, RR, Success
 
-from models.mrhp_ab_no_repair.hdr_search import HDRSearch
-from models.mrhp_ab_no_repair.index_saver import IndexSaver
-from models.mrhp_ab_no_repair.main_model import IndexScorer
-from models.mrhp_ab_no_repair.residual import ResidualCodec
-from models.mrhp_ab_no_repair.util import optimize_ivf
-from module.dynamic_process import dynamic_process_factory, dynamic_process_doc_id_factory
-from module.retriever import Retriever
+from Script.models.mrhp_ab_no_repair.hdr_search import HDRSearch
+from Script.models.mrhp_ab_no_repair.index_saver import IndexSaver
+from Script.models.mrhp_ab_no_repair.main_model import IndexScorer
+from Script.models.mrhp_ab_no_repair.residual import ResidualCodec
+from Script.models.mrhp_ab_no_repair.util import optimize_ivf
+from Script.module.dynamic_process import dynamic_process_factory, dynamic_process_doc_id_factory
+from Script.module.retriever import Retriever
 import torch
 import os
 
-from utils.util_effectiveness import save_effectiveness_metrics, save_effectiveness_metrics_update
+from Script.utils.util_effectiveness import save_effectiveness_metrics, save_effectiveness_metrics_update
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
-from utils.util_timer import timer
+from Script.utils.util_timer import timer
 
 
 def batch(group, bsize, provide_offset=False):
