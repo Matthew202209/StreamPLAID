@@ -1,7 +1,7 @@
 # StreamPLAID: Efficient Incremental Indexing via Monotonic Radius Hierarchical Partitioning for Multi-Vector Retrieval
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![Architecture](https://img.shields.io/badge/Architecture-CPU%20%2B%20GPU-green)
 
 This repository contains the official implementation of **StreamPLAID**, a framework designed for efficient incremental indexing in streaming multi-vector retrieval (MVR) workloads.
@@ -14,11 +14,11 @@ To address bottlenecks, we propose **StreamPLAID**, a framework designed for eff
 ## Overview
 
 ### 1. Dynamic Data in Multi-Vector Retrieval
-![Dynamic Multi-Vector Retrieval](./docs/dynamic_mvr.png)
+![Dynamic Multi-Vector Retrieval](./docs/framework_dynamic.png)
 *Figure 1: Illustration of the challenges and mechanisms of dynamic data updates in Multi-Vector Retrieval systems.*
 
 ### 2. The StreamPLAID Methodology
-![StreamPLAID Methodology](./docs/methodology.png)
+![StreamPLAID Methodology](./docs/MRHP_frameworks.png)
 *Figure 2: The core architecture of StreamPLAID, highlighting Monotonic Radius Hierarchical Partitioning (MRHP) and the Spatiotemporal Maintenance Operator.*
 
 ## Hardware Environment
